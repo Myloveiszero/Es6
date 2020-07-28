@@ -1,0 +1,27 @@
+<script>
+    // async await
+    //协程 
+    function * foo() {
+        yield 1
+        console.log("1")
+        yield 2
+        console.log("2")
+        yield 3
+        console.log("3")
+        yield 4
+        console.log("4")
+    }
+    let interator = foo();
+    interator.next();
+    interator.next();
+    interator.next();
+    interator.next();
+    interator.next();
+
+    // function autoRun() {
+    //     let { done } = interatorObj.next();
+    //     if (done) return;
+    //     autoRun(interatorObj);
+    // }
+    // autoRun(interator);
+</script>
